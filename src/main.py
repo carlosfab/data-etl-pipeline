@@ -1,8 +1,10 @@
+"""Main file of the project, responsible for calling the functions."""
+
 # --- Imports ---
-from pipeline.extract import extract_from_excel
-from pipeline.transform import transform_to_single_dataframe
-from pipeline.load import load_to_excel
 from paths import INPUT_DIR, OUTPUT_DIR
+from pipeline.extract import extract_from_excel
+from pipeline.load import load_to_excel
+from pipeline.transform import transform_to_single_dataframe
 
 # --- Main ---
 if __name__ == '__main__':

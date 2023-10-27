@@ -1,11 +1,11 @@
+"""Contains functions for loading data into various formats."""
+
 # --- Imports ---
 import pandas as pd
 
 
 def load_to_excel(
-        data_frame: pd.DataFrame,
-        output_path: str,
-        file_name: str
+    data_frame: pd.DataFrame, output_path: str, file_name: str
 ) -> None:
     """
     Load a DataFrame into an Excel file.
@@ -18,7 +18,6 @@ def load_to_excel(
     Returns:
         None: Just prints a confirmation message.
     """
-
     data_frame.to_excel(f'{output_path}/{file_name}.xlsx', index=False)
     print(f'File saved successfully at {output_path}/{file_name}.xlsx')
     return None
