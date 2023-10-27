@@ -5,10 +5,6 @@ from typing import List
 import pandas as pd
 
 
-# --- Constants ---
-# TODO
-
-# --- Functions ---
 def extract_from_excel(
         path: str
 ) -> List[pd.DataFrame]:
