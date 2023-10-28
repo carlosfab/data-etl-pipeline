@@ -1,0 +1,26 @@
+site_name: Data ETL Pipeline
+theme:
+  name: readthedocs
+  highlightjs: true
+  palette:
+    primary: red
+  language: pt-br
+
+repo_name: "carlosfab/data-etl-pipeline"
+repo_url: "https://github.com/carlosfab/data-etl-pipeline"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+
+nav:
+  - Home: index.md
+  - API: api.md
